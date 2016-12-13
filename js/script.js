@@ -1,7 +1,7 @@
 /*
-	@Auteur : Clément 
-	@Date: 21/13/2016
-	@Titre : Tic-Tac-Toe
+@Auteur : Clément 
+@Date: 21/13/2016
+@Titre : Tic-Tac-Toe
 */
 
 var cases	= [-1, -1, -1, -1, -1, -1, -1, -1, -1];
@@ -48,24 +48,24 @@ document.getElementById("play").addEventListener("click", function() { // on dé
 		joueur2	= false;
 		document.getElementById("show").style.display	= "inline";
 		document.getElementById("joueur").style.color	= "#010101";
-		document.getElementById("joueur").innerHTML		= "<p>C'est au joueur 1 de commencer.</p>";
+		document.getElementById("joueur").innerHTML	= "<p>C'est au joueur 1 de commencer.</p>";
 	}
 });
 
 document.getElementById("reset").addEventListener("click", function() { // on reset le jeu lorsque l'utilisateur clique le bouton "reset"
 	if (started == false) {
-		document.getElementById("joueur").innerHTML		= "<p>Pourquoi redémarrer le jeu quand aucun jeu est démarré?</p>";
+		document.getElementById("joueur").innerHTML	= "<p>Pourquoi redémarrer le jeu quand aucun jeu est démarré?</p>";
 	} else {
 		for (var i = 0; i < cases.length; i++) {
 			cases[i]	= -1;
 			document.getElementById(i).innerHTML	= "";
-			document.getElementById(i).style		= "";
+			document.getElementById(i).style	= "";
 			
 		}
 		joueur1	= true;
 		joueur2	= false;
 		document.getElementById("joueur").style.color	= "#010101";
-		document.getElementById("joueur").innerHTML		= "<p>Le jeu a été redémarré!</p>";
+		document.getElementById("joueur").innerHTML	= "<p>Le jeu a été redémarré!</p>";
 	}
 });
 
@@ -73,18 +73,18 @@ function setResult(joueur) { // on met à jour le tableau des joueurs
 	started = false;
 	if (joueur == 1) {
 		j1resu	+= 1;
-		document.getElementById("stats1").innerHTML	 = j1resu;
+		document.getElementById("stats1").innerHTML = j1resu;
 	} else {
 		j2resu	+= 1;
-		document.getElementById("stats2").innerHTML	 = j2resu;
+		document.getElementById("stats2").innerHTML = j2resu;
 	}	
 }
 
 function setText(click, symb, center, largeur, color) {
-	document.getElementById(click).fontsize 		= largeur;
+	document.getElementById(click).fontsize 	= largeur;
 	document.getElementById(click).style.textAlign	= center;
-	document.getElementById(click).innerHTML 		= symb;
-	document.getElementById(click).style.color 		= color;
+	document.getElementById(click).innerHTML 	= symb;
+	document.getElementById(click).style.color 	= color;
 }
 
 function Verif(a, b, c) { // Vérifier si a = b = c et si c n'est pas une case vide
@@ -116,21 +116,21 @@ function Morpion(click) { // quand le joueur clique sur une case
 			} else {
 				if (joueur1 == true) { // le joueur 1 joue
 					cases[casee] 	= 1;
-					joueur1			= false;
-					joueur2			= true;
+					joueur1	= false;
+					joueur2	= true;
 					setText(click, "X", "center", 200, "green");
 					document.getElementById("joueur").innerHTML	= "<p>C'est au tour du joueur 2!</p>";
 				} else { // le joueur 2 joue
 					cases[casee] 	= 2;
-					joueur1			= true;
-					joueur2			= false;
+					joueur1	= true;
+					joueur2	= false;
 					setText(click, "O", "center", 200, "red");
 					document.getElementById("joueur").innerHTML	= "<p>C'est au tour du joueur 1!</p>";
 				}
 			}
 		} else {
 			document.getElementById("joueur").style.color	= "#ff0000";
-			document.getElementById("joueur").innerHTML		= "<p>La partie est perdue pour les deux joueurs.</p>";
+			document.getElementById("joueur").innerHTML	= "<p>La partie est perdue pour les deux joueurs.</p>";
 		}
 	}
 }
