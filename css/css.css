@@ -1,0 +1,59 @@
+body{
+	background: #dedede;
+	color: #292929;
+	font-family: 'Ubuntu';
+}
+
+.table{
+	width : 250px;
+	height : 250px;
+	border : solid 3px black;
+	border-collapse: collapse;  
+}
+
+#resultats {
+
+	position: absolute;
+	left: 10%;
+	top: 5%;
+	border: 1px dashed #4C7EB1;
+	width: 20%;
+	height: 10%;
+	font-size: 18px;
+}
+  
+.td{
+	border : solid 3px black;	
+	font-size:40px;
+	width : 33%;
+	height : 33%;
+}
+			
+p {
+	font-size: 20px;
+	text-align:center;
+}
+
+#play {
+	margin:auto;
+	display:block;
+	width: 50px;
+}
+
+#reset {
+	margin: auto;
+	display:block;
+	width: 50px;
+}
+
+#div1 {
+	margin-left: 30px; 
+	margin-top: 21px; 
+	margin-bottom: 30px;
+}
+
+#div2 {
+	margin-left: -85px; 
+	margin-top: -4.9%; 
+	margin-bottom: 30px;
+}

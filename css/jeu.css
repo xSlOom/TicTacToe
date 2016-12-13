@@ -1,0 +1,40 @@
+body {
+	margin: auto;
+	color: #282828; /* Couleur du texte*/
+	font: 16px/1.5em "Segoe UI", "Helvetica Neue", Roboto, Arial, sans-serif;
+}
+.container {
+	margin: auto;
+	max-width: 960px;
+	justify-content: center;
+	background: #456;
+}
+.title {
+	text-align: center;
+	height: 30px;
+	background: #ccc;
+	margin-bottom: 30px;
+}
+table {
+	margin-top: 20px;
+	margin: auto;
+	font-size: 7em;
+}
+td {
+	width: 100px;
+	height: 100px;
+	background-color: #ccc;
+	color: #fff;
+	border: 2px;
+	text-align: center;
+}
+.resultat{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 2em;
+}
+button {
+	justify-content: flex-end;
+}
+
+
