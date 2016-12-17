@@ -7,7 +7,7 @@
 var cases	= [-1, -1, -1, -1, -1, -1, -1, -1, -1];
 var started	= false; // si le jeu est démarré ou pas ?
 var joueur1	= true; // joueur 1 par default.
-var joueur2 = false; // joueur 2 juste après
+var joueur2 	= false; // joueur 2 juste après
 
 var j1symb	= "X";
 var j2symb	= "O";
